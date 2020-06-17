@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-
 <head>
     <meta charset="utf-8">
     <title>piggy vest interest calculator</title>
     <link rel="stylesheet" href="/css/app.css">
+    <script type="text/javascript">
+        document.addEventListener("DOMContentLoaded", function(event) {
+          document.documentElement.setAttribute("data-theme", "light");
+        
+          // Get our button switcher
+          var themeSwitcher = document.getElementById("theme-switcher");
+        
+          // When our button gets clicked
+          themeSwitcher.onclick = function() {
+            // Get the current selected theme, on the first run
+            // it should be `light`
+            let currentTheme = document.documentElement.getAttribute("data-theme");
+        
+            // Switch between `dark` and `light`
+            var switchToTheme = currentTheme === "dark" ? "light" : "dark"
+        
+            // Set our currenet theme to the new one
+            document.documentElement.setAttribute("data-theme", switchToTheme);
+          }
+        });
+        </script>
 </head>
 
 <body>
@@ -79,7 +99,7 @@
         <link rel="stylesheet" href="css\app.css">
     </head>
     <body>
-
+        <div class="switch"> <i class="fa fa-toggle-on fa-2x" aria-hidden="true" id="theme-switcher"></i></div>
         <div class="container">
             <h3>Interest Calculator</h3>
             <div class="row">
