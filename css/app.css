@@ -28,6 +28,11 @@ body {
     --text-color: #fff;
   }
 
+  #theme-switcher {
+      float: right;
+      margin: 20px;
+  }
+
 .navbar-nav {
     display: flex;
     list-style: none;
