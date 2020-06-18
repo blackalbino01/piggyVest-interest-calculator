@@ -13,6 +13,21 @@
     z-index: 1;
 }
 
+:root {
+    --bg-color: white;
+    --text-color: black;
+  }
+body {
+    background-color: var(--bg-color);
+    color: var(--text-color);
+
+}
+
+[data-theme="dark"] {
+    --bg-color: #000;
+    --text-color: #fff;
+  }
+
 .navbar-nav {
     display: flex;
     list-style: none;
