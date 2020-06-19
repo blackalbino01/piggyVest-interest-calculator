@@ -3,6 +3,11 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  width:100%;
+  margin: 0 auto;
+}
+
 
 .navbar {
     position: fixed;
@@ -17,10 +22,31 @@
     --bg-color: white;
     --text-color: black;
   }
-body {
+body{
     background-color: var(--bg-color);
     color: var(--text-color);
 
+}
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  border: 1rem solid #f3f3f3; /* Light grey */
+  border-top: 1rem solid blue; /* primary */
+  border-radius: 70%;
+  width: 6rem;
+  height: 6rem;
+  animation: spin 2s linear infinite;
+
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
 }
 
 [data-theme="dark"] {
@@ -38,7 +64,8 @@ body {
     list-style: none;
     flex-direction: column;
     align-items: center;
-    height: 100%;
+    height: 100vh;
+    padding-bottom: 0;
 }
 
 .nav-item {
@@ -58,7 +85,7 @@ header {
 }
 
 header {
-    /* height: 8rem; */
+/*     height: 8rem; */
 }
 
 header i {
@@ -69,11 +96,11 @@ header i {
     display: none;
     margin-left: 1rem;
     color: #fff;
-    padding: 10px 20px;
+    padding: .7rem 1rem;
 }
 
 header img {
-    width: 15rem;
+    width: 14rem;
     height: 8rem;
     overflow: hidden;
     margin-left: -30px;
@@ -107,6 +134,15 @@ header i {
     transform: translateX(30px);
     border-radius: 10px 10px 10px 0;
 }
+
+
+
+
+
+/* body */
+.heading{
+  padding-top: 10px;
+}
 div.container>h3{
   margin-left: 50px;
 }
@@ -121,7 +157,7 @@ div.col>p{
 }
 
 div.col > button{
-  text-transform: capitalize;
+  text-transform: capitalize !important;
   font-weight: bold;
   padding:20px;
   background-color: white;
@@ -135,6 +171,7 @@ div.col>button:hover{
  background-color: rgb(10, 10, 105);
 }
 div.col>input{
+
  padding:25px;
  margin-top: 36px;
 border:1px solid #062863;
@@ -145,5 +182,60 @@ width: 258.49px;
 div.col>input[type=number]{
   color:rgb(10, 10, 105);
   font-weight: bold;
+
+}
+
+ @media only screen and (max-width: 1020px) {
+div.container>div.row{
+  display:block ;
+}
+#buttons{
+  display: flex;
+  flex-direction: row;
+}
+}
+@media only screen and (max-width: 1028px) {
+
+#interest_button,#download_button{
+  text-transform:lowercase;
+margin-bottom: 10px;
+padding:10px;
+
+
+}
+}
+@media only screen and (max-width: 775px){
+
+  div.col>input{
+   padding:20px;
+   width:50%;
+  }
+}
+
+@media only screen and (max-width: 472px){
+  body{
+    width:100%;
+  }
+  div.container{
+    z-index: 1;
+  }
+  header img{
+    width:13rem;
+  }
+.navbar{
+  width: 3.7rem;
+  padding:0;
+}
+
+div.col>input{
+ padding:10px;
+ width:60%;
+}
+#buttons{
+padding-bottom: 0;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 }
