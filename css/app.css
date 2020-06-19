@@ -3,6 +3,10 @@
     padding: 0;
     box-sizing: border-box;
 }
+body{
+  width:100%;
+  margin: 0 auto;
+}
 
 
 .navbar {
@@ -18,7 +22,7 @@
     --bg-color: white;
     --text-color: black;
   }
-body {
+
     background-color: var(--bg-color);
     color: var(--text-color);
 
@@ -187,6 +191,9 @@ padding:10px;
 }
 
 @media only screen and (max-width: 472px){
+  body{
+    width:100%;
+  }
   div.container{
     z-index: 1;
   }
@@ -197,12 +204,10 @@ padding:10px;
   width: 3.7rem;
   padding:0;
 }
-#theme-switcher{
-  margin:0;
-}
+
 div.col>input{
  padding:10px;
- width:50%;
+ width:60%;
 }
 #buttons{
 text-align: center;
