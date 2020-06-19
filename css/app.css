@@ -3,11 +3,6 @@
     padding: 0;
     box-sizing: border-box;
 }
-body{
-  width:100%;
-  margin: 0 auto;
-}
-
 
 .navbar {
     position: fixed;
@@ -22,7 +17,7 @@ body{
     --bg-color: white;
     --text-color: black;
   }
-
+body {
     background-color: var(--bg-color);
     color: var(--text-color);
 
@@ -43,8 +38,7 @@ body{
     list-style: none;
     flex-direction: column;
     align-items: center;
-    height: 100vh;
-    padding-bottom: 0;
+    height: 100%;
 }
 
 .nav-item {
@@ -64,7 +58,7 @@ header {
 }
 
 header {
-    height: 8rem;
+    /* height: 8rem; */
 }
 
 header i {
@@ -79,7 +73,7 @@ header i {
 }
 
 header img {
-    width: 14rem;
+    width: 15rem;
     height: 8rem;
     overflow: hidden;
     margin-left: -30px;
@@ -113,15 +107,6 @@ header i {
     transform: translateX(30px);
     border-radius: 10px 10px 10px 0;
 }
-
-
-
-
-
-/* body */
-.heading{
-  padding-top: 10px;
-}
 div.container>h3{
   margin-left: 50px;
 }
@@ -136,21 +121,20 @@ div.col>p{
 }
 
 div.col > button{
-  text-transform: capitalize !important;
+  text-transform: capitalize;
   font-weight: bold;
   padding:20px;
   background-color: white;
   color:rgb(10, 10, 105);;
   border:1px solid black;
 border-radius: 10px 15px 15px 0px;
-/* width: 323.11px; */
+
 }
 div.col>button:hover{
  color:white;
  background-color: rgb(10, 10, 105);
 }
 div.col>input{
-
  padding:25px;
  margin-top: 36px;
 border:1px solid #062863;
@@ -161,60 +145,5 @@ width: 258.49px;
 div.col>input[type=number]{
   color:rgb(10, 10, 105);
   font-weight: bold;
-
-}
-
- @media only screen and (max-width: 1020px) {
-div.container>div.row{
-  display:block ;
-}
-#buttons{
-  display: flex;
-  flex-direction: row;
-}
-}
-@media only screen and (max-width: 1028px) {
-
-#interest_button,#download_button{
-  text-transform:lowercase;
-margin-bottom: 10px;
-padding:10px;
-
-
-}
-}
-@media only screen and (max-width: 775px){
-
-  div.col>input{
-   padding:20px;
-   width:50%;
-  }
-}
-
-@media only screen and (max-width: 472px){
-  body{
-    width:100%;
-  }
-  div.container{
-    z-index: 1;
-  }
-  header img{
-    width:13rem;
-  }
-.navbar{
-  width: 3.7rem;
-  padding:0;
-}
-
-div.col>input{
- padding:10px;
- width:60%;
-}
-#buttons{
-padding-bottom: 0;
-  flex-direction: column;
-  align-items: center;
-}
-
 
 }
