@@ -27,6 +27,27 @@ body{
     color: var(--text-color);
 
 }
+.preloader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.loader {
+  border: 1rem solid #f3f3f3; /* Light grey */
+  border-top: 1rem solid blue; /* primary */
+  border-radius: 70%;
+  width: 6rem;
+  height: 6rem;
+  animation: spin 2s linear infinite;
+  
+}
+
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
 
 [data-theme="dark"] {
     --bg-color: #000;
@@ -75,7 +96,7 @@ header i {
     display: none;
     margin-left: 1rem;
     color: #fff;
-    padding: 10px 20px;
+    padding: .7rem 1rem;
 }
 
 header img {
@@ -218,3 +239,5 @@ padding-bottom: 0;
 
 
 }
+
+
