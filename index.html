@@ -32,7 +32,7 @@
     <nav class="navbar">
         <header>
             <i class="fas fa-bars"></i>
-            <img src="/css/index-removebg-preview.png" alt="">
+            <img src="index-removebg-preview.png" class ="img-h"alt="">
         </header>
         <ul class="navbar-nav">
 
@@ -102,7 +102,7 @@
     <body>
      <div class="switch"> <i class="fa fa-toggle-on fa-2x" aria-hidden="true" id="theme-switcher"></i></div>
         <div class="container">
-            <h3>Interest Calculator</h3>
+            <h3 class ="heading">Interest Calculator</h3>
             <div class="row">
                 <div class="col">
                     <h3>Savings amount (‎₦)</h3>
@@ -137,7 +137,7 @@
                     <p>description</p>
                     <form>
                         <div class="form-group">
-                            <input type="range" min="1" max="25"form-control-range" id="formControlRange3">
+                            <input type="range" min="1" max="25 class="form-control-range" id="formControlRange3">
                         </div>
                     </form>
                 </div>
@@ -145,13 +145,15 @@
                     <input type="number">
                 </div>
             </div>
-            <div class="row">
-              <div class="col">
-                <button id="interest_button"> CALCULATE MONTHLY PAYMENT</button>
-              </div>
-              <div class="col">
-                 <button>DOWNLOAD SAVINGS SCHEDULE</button>
-              </div>
+            <div class="row" id="buttons">
+
+                <div class="col">
+                  <button id="interest_button"> calculate monthly payment</button>
+                </div>
+                <div class="col">
+                   <button id ="download_button">download saving schedule</button>
+                </div>
+
           </div>
         </div>
 
