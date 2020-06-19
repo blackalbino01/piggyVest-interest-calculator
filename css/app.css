@@ -210,7 +210,7 @@ div.col>input{
  width:60%;
 }
 #buttons{
-text-align: center;
+padding-bottom: 0;
   flex-direction: column;
   align-items: center;
 }
